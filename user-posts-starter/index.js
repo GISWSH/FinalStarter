@@ -11,7 +11,7 @@ userListEl.innerHTML = usersData.map((user) => userHTML(user)).join("");
 main ();
 
 function showUserPosts(id) {
-    localStorage.setItem("id",id);
+    console.log(window.location);
    window.location.href = `${window.location.origin}/user.html`
 }
 
