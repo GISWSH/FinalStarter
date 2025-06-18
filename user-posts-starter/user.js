@@ -6,13 +6,11 @@ async function onSearchChange(event) {
     const postsData = await posts.json();
     postListEl.innerHTML = postsData.map(post => `
         <div class="post">
-        <div class="post__title">
-        ${post.title}
-        Post Title
+          <div class="post__title">
+            ${post.title}
         </div>
         <p class="post__body">
         ${post.body}
-        Post Body
         </p>
         </div>
     `).join('');
