@@ -26,11 +26,9 @@ async function main() {
         <div class="post">
         <div class="post__title">
         ${post.title}
-        Post Title
         </div>
         <p class="post__body">
         ${post.body}
-        Post Body
         </p>
         </div>
     `).join('');
